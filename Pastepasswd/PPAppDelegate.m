@@ -23,7 +23,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    UIColor* navigationColor = [UIColor colorWithRed:11.0f / 255.0f green:189.0f / 255.0f blue:128.0f / 255.0f alpha:1.0];
+    UIColor* navigationColor = [UIColor colorWithRed:102.0f / 255.0f green:202.0f / 255.0f blue:196.0f / 255.0f alpha:1.0];
     UIColor *colorAttributeName = [UIColor whiteColor];
     [[UINavigationBar appearance] setBarTintColor:navigationColor];
     [[UINavigationBar appearance] setTintColor:[UIColor colorWithWhite:1.0f alpha:1.0f]];
