@@ -1,21 +1,35 @@
 //
-//  PPIAppDelegate.m
+//  PPAppDelegate.m
 //  Pastepasswd
 //
 //  Created by Spiros Gerokostas on 2/12/14.
 //  Copyright (c) 2014 Spiros Gerokostas. All rights reserved.
 //
 
-#import "PPIAppDelegate.h"
+#import "PPAppDelegate.h"
+#import "PPMainViewController.h"
 
-@implementation PPIAppDelegate
+@implementation PPAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    
+    PPMainViewController *mainViewController = [[PPMainViewController alloc] init];
+    
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:mainViewController];
+    self.window.rootViewController = navigationController;
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    UIColor* navigationColor = [UIColor colorWithRed:11.0f / 255.0f green:189.0f / 255.0f blue:128.0f / 255.0f alpha:1.0];
+    UIColor *colorAttributeName = [UIColor whiteColor];
+    [[UINavigationBar appearance] setBarTintColor:navigationColor];
+    [[UINavigationBar appearance] setTintColor:[UIColor colorWithWhite:1.0f alpha:1.0f]];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:colorAttributeName}];
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    
     return YES;
 }
 

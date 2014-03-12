@@ -12,13 +12,15 @@
 		560B293D18ABF1C60004BFC4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 560B293C18ABF1C60004BFC4 /* UIKit.framework */; };
 		560B294318ABF1C60004BFC4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 560B294118ABF1C60004BFC4 /* InfoPlist.strings */; };
 		560B294518ABF1C60004BFC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 560B294418ABF1C60004BFC4 /* main.m */; };
-		560B294918ABF1C60004BFC4 /* PPIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 560B294818ABF1C60004BFC4 /* PPIAppDelegate.m */; };
+		560B294918ABF1C60004BFC4 /* PPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 560B294818ABF1C60004BFC4 /* PPAppDelegate.m */; };
 		560B294B18ABF1C60004BFC4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 560B294A18ABF1C60004BFC4 /* Images.xcassets */; };
 		560B295218ABF1C60004BFC4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 560B295118ABF1C60004BFC4 /* XCTest.framework */; };
 		560B295318ABF1C60004BFC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 560B293818ABF1C60004BFC4 /* Foundation.framework */; };
 		560B295418ABF1C60004BFC4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 560B293C18ABF1C60004BFC4 /* UIKit.framework */; };
 		560B295C18ABF1C60004BFC4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 560B295A18ABF1C60004BFC4 /* InfoPlist.strings */; };
 		560B295E18ABF1C60004BFC4 /* PastepasswdTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 560B295D18ABF1C60004BFC4 /* PastepasswdTests.m */; };
+		560B296D18ABF2FA0004BFC4 /* PPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 560B296C18ABF2FA0004BFC4 /* PPMainViewController.m */; };
+		56BC309718B28A0F00B0D692 /* PPLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BC309618B28A0F00B0D692 /* PPLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,14 +42,18 @@
 		560B294218ABF1C60004BFC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		560B294418ABF1C60004BFC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		560B294618ABF1C60004BFC4 /* Pastepasswd-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pastepasswd-Prefix.pch"; sourceTree = "<group>"; };
-		560B294718ABF1C60004BFC4 /* PPIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPIAppDelegate.h; sourceTree = "<group>"; };
-		560B294818ABF1C60004BFC4 /* PPIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPIAppDelegate.m; sourceTree = "<group>"; };
+		560B294718ABF1C60004BFC4 /* PPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPAppDelegate.h; sourceTree = "<group>"; };
+		560B294818ABF1C60004BFC4 /* PPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPAppDelegate.m; sourceTree = "<group>"; };
 		560B294A18ABF1C60004BFC4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		560B295018ABF1C60004BFC4 /* PastepasswdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PastepasswdTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		560B295118ABF1C60004BFC4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		560B295918ABF1C60004BFC4 /* PastepasswdTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PastepasswdTests-Info.plist"; sourceTree = "<group>"; };
 		560B295B18ABF1C60004BFC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		560B295D18ABF1C60004BFC4 /* PastepasswdTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PastepasswdTests.m; sourceTree = "<group>"; };
+		560B296B18ABF2FA0004BFC4 /* PPMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPMainViewController.h; sourceTree = "<group>"; };
+		560B296C18ABF2FA0004BFC4 /* PPMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPMainViewController.m; sourceTree = "<group>"; };
+		56BC309518B28A0F00B0D692 /* PPLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPLabel.h; sourceTree = "<group>"; };
+		56BC309618B28A0F00B0D692 /* PPLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +113,9 @@
 		560B293E18ABF1C60004BFC4 /* Pastepasswd */ = {
 			isa = PBXGroup;
 			children = (
-				560B294718ABF1C60004BFC4 /* PPIAppDelegate.h */,
-				560B294818ABF1C60004BFC4 /* PPIAppDelegate.m */,
+				560B296718ABF1F90004BFC4 /* View Controllers */,
+				560B294718ABF1C60004BFC4 /* PPAppDelegate.h */,
+				560B294818ABF1C60004BFC4 /* PPAppDelegate.m */,
 				560B294A18ABF1C60004BFC4 /* Images.xcassets */,
 				560B293F18ABF1C60004BFC4 /* Supporting Files */,
 			);
@@ -142,6 +149,25 @@
 				560B295A18ABF1C60004BFC4 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		560B296718ABF1F90004BFC4 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				56BC309418B289F900B0D692 /* Controls */,
+				560B296B18ABF2FA0004BFC4 /* PPMainViewController.h */,
+				560B296C18ABF2FA0004BFC4 /* PPMainViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		56BC309418B289F900B0D692 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				56BC309518B28A0F00B0D692 /* PPLabel.h */,
+				56BC309618B28A0F00B0D692 /* PPLabel.m */,
+			);
+			name = Controls;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,7 +214,7 @@
 		560B292D18ABF1C60004BFC4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = PPI;
+				CLASSPREFIX = PP;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Spiros Gerokostas";
 				TargetAttributes = {
@@ -240,7 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				560B294918ABF1C60004BFC4 /* PPIAppDelegate.m in Sources */,
+				56BC309718B28A0F00B0D692 /* PPLabel.m in Sources */,
+				560B296D18ABF2FA0004BFC4 /* PPMainViewController.m in Sources */,
+				560B294918ABF1C60004BFC4 /* PPAppDelegate.m in Sources */,
 				560B294518ABF1C60004BFC4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,6 +470,7 @@
 				560B296318ABF1C60004BFC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		560B296418ABF1C60004BFC4 /* Build configuration list for PBXNativeTarget "PastepasswdTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +479,7 @@
 				560B296618ABF1C60004BFC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
