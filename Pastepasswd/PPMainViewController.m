@@ -4615,7 +4615,14 @@ int RandomInRange(int bottom, int top)
     
     //[(UILabel *)[self.view viewWithTag:RLABEL_TEXT] setText:result];
     
+    //update
     
+    NSCharacterSet *notAllowedChars = [[NSCharacterSet characterSetWithCharactersInString:@"B8G6I1l0OQDS5Z2"] invertedSet];
+    
+    NSString *resultString = [[result componentsSeparatedByCharactersInSet:notAllowedChars] componentsJoinedByString:@""];
+    
+    NSLog (@"Result: %@", resultString);
+
     
     // calculate text size
     

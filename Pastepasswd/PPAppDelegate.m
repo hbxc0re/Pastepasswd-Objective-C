@@ -8,6 +8,7 @@
 
 #import "PPAppDelegate.h"
 #import "PPMainViewController.h"
+#import "PPPasswordViewController.h"
 
 @implementation PPAppDelegate
 
@@ -15,9 +16,9 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    PPMainViewController *mainViewController = [[PPMainViewController alloc] init];
+    PPPasswordViewController *passwordViewController = [[PPPasswordViewController alloc] init];
     
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:mainViewController];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:passwordViewController];
     self.window.rootViewController = navigationController;
     
     self.window.backgroundColor = [UIColor whiteColor];
