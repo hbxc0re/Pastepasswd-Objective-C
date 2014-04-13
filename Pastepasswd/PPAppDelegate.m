@@ -24,11 +24,23 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    UIColor* navigationColor = [UIColor colorWithRed:102.0f / 255.0f green:202.0f / 255.0f blue:196.0f / 255.0f alpha:1.0];
-    UIColor *colorAttributeName = [UIColor whiteColor];
-    [[UINavigationBar appearance] setBarTintColor:navigationColor];
-    [[UINavigationBar appearance] setTintColor:[UIColor colorWithWhite:1.0f alpha:1.0f]];
-    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:colorAttributeName}];
+    UINavigationBar *navigationBar = [UINavigationBar appearance];
+	//navigationBar.barTintColor = [UIColor colorWithRed:101.0f / 255.0f green:195.0f / 255.0f blue:169.0f / 255.0f alpha:1];
+    //hue: 0.45, saturation: 0.48, brightness: 0.76, alpha: 1.00
+    navigationBar.barTintColor = [UIColor colorWithHue:0.45 saturation:0.48 brightness:0.76 alpha:1.00];
+	navigationBar.tintColor = [UIColor colorWithWhite:1.0f alpha:0.5f];
+	navigationBar.titleTextAttributes = @{
+                                          NSForegroundColorAttributeName: [UIColor whiteColor],
+                                          NSFontAttributeName: [UIFont fontWithName:@"Avenir-Heavy" size:20.0f]
+                                          };
+    //hue: 0.49, saturation: 0.74, brightness: 0.65, alpha: 1.00
+    CGFloat hue;
+    CGFloat saturation;
+    CGFloat brightness;
+    CGFloat alpha;
+    BOOL success = [navigationBar.barTintColor getHue:&hue saturation:&saturation brightness:&brightness alpha:&alpha];
+    NSLog(@"success: %i hue: %0.2f, saturation: %0.2f, brightness: %0.2f, alpha: %0.2f", success, hue, saturation, brightness, alpha);
+    
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     
     return YES;
