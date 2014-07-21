@@ -1,0 +1,16 @@
+PODS:
+  - pop (1.0.6)
+  - SVProgressHUD (1.0)
+  - TTTAttributedLabel (1.10.1)
+
+DEPENDENCIES:
+  - pop (~> 1.0)
+  - SVProgressHUD
+  - TTTAttributedLabel
+
+SPEC CHECKSUMS:
+  pop: e518794da38942c05255eb64b36d894e70cb4f00
+  SVProgressHUD: 5034c6e22b8c2ca3e09402e48d41ed0340aa1c50
+  TTTAttributedLabel: 94bb04f1e005616002dd2cee0262a0082e533627
+
+COCOAPODS: 0.33.1

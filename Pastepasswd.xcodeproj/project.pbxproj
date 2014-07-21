@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38341D560D1446A49C53980E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7C9A8B0F894645BB4FDC49 /* libPods.a */; };
+		560223EE197A75F30090ACB7 /* UIColor+Pastepasswd.m in Sources */ = {isa = PBXBuildFile; fileRef = 560223ED197A75F30090ACB7 /* UIColor+Pastepasswd.m */; };
+		5609F3BA1971D913001E1375 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5609F3B91971D913001E1375 /* Crashlytics.framework */; };
 		560B293918ABF1C60004BFC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 560B293818ABF1C60004BFC4 /* Foundation.framework */; };
 		560B293B18ABF1C60004BFC4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 560B293A18ABF1C60004BFC4 /* CoreGraphics.framework */; };
 		560B293D18ABF1C60004BFC4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 560B293C18ABF1C60004BFC4 /* UIKit.framework */; };
@@ -22,10 +25,19 @@
 		560B296D18ABF2FA0004BFC4 /* PPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 560B296C18ABF2FA0004BFC4 /* PPMainViewController.m */; };
 		56415FB718E0A9DC00160A2A /* UIProgressView+Pastepasswd.m in Sources */ = {isa = PBXBuildFile; fileRef = 56415FB618E0A9DC00160A2A /* UIProgressView+Pastepasswd.m */; };
 		56415FBA18E0AA1700160A2A /* UIImage+Pastepasswd.m in Sources */ = {isa = PBXBuildFile; fileRef = 56415FB918E0AA1700160A2A /* UIImage+Pastepasswd.m */; };
+		56558D6819011FCC00368D48 /* PPGroupedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56558D6719011FCC00368D48 /* PPGroupedTableViewController.m */; };
+		56558D6B1901207A00368D48 /* PPSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56558D6A1901207A00368D48 /* PPSettingsViewController.m */; };
+		56558D6F190121C600368D48 /* PPSettingsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 56558D6E190121C600368D48 /* PPSettingsTableViewCell.m */; };
+		56558D71190123A400368D48 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56558D70190123A400368D48 /* MessageUI.framework */; };
+		56558D731901241C00368D48 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56558D721901241C00368D48 /* MobileCoreServices.framework */; };
+		56558D751901244C00368D48 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56558D741901244C00368D48 /* Security.framework */; };
+		56558D771901245900368D48 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56558D761901245900368D48 /* CFNetwork.framework */; };
+		56558D791901247300368D48 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56558D781901247300368D48 /* SystemConfiguration.framework */; };
+		56558D7B1901249E00368D48 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56558D7A1901249E00368D48 /* AdSupport.framework */; };
+		5672F3DB190051620080F8BF /* NSString+Pastepasswd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5672F3DA190051620080F8BF /* NSString+Pastepasswd.m */; };
 		567BA04E18E0221400862C97 /* PPPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 567BA04D18E0221400862C97 /* PPPasswordViewController.m */; };
-		567BA05318E026AB00862C97 /* NJOPasswordStrengthEvaluator.m in Sources */ = {isa = PBXBuildFile; fileRef = 567BA05218E026AB00862C97 /* NJOPasswordStrengthEvaluator.m */; };
-		5683FC0318E05EBE007386F7 /* NSString+CountString.m in Sources */ = {isa = PBXBuildFile; fileRef = 5683FC0218E05EBE007386F7 /* NSString+CountString.m */; };
 		56BC309718B28A0F00B0D692 /* PPLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BC309618B28A0F00B0D692 /* PPLabel.m */; };
+		56BE5695197AC74700748F59 /* UIFont+Pastepasswd.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BE5694197AC74700748F59 /* UIFont+Pastepasswd.m */; };
 		56D9273418E934F9001134A4 /* PPPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D9273318E934F9001134A4 /* PPPasswordView.m */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +52,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D7C9A8B0F894645BB4FDC49 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		560223EC197A75F30090ACB7 /* UIColor+Pastepasswd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Pastepasswd.h"; sourceTree = "<group>"; };
+		560223ED197A75F30090ACB7 /* UIColor+Pastepasswd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Pastepasswd.m"; sourceTree = "<group>"; };
+		5609F3B91971D913001E1375 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
 		560B293518ABF1C60004BFC4 /* Pastepasswd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pastepasswd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		560B293818ABF1C60004BFC4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		560B293A18ABF1C60004BFC4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,16 +78,29 @@
 		56415FB618E0A9DC00160A2A /* UIProgressView+Pastepasswd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+Pastepasswd.m"; sourceTree = "<group>"; };
 		56415FB818E0AA1700160A2A /* UIImage+Pastepasswd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Pastepasswd.h"; sourceTree = "<group>"; };
 		56415FB918E0AA1700160A2A /* UIImage+Pastepasswd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Pastepasswd.m"; sourceTree = "<group>"; };
+		56558D6619011FCC00368D48 /* PPGroupedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPGroupedTableViewController.h; sourceTree = "<group>"; };
+		56558D6719011FCC00368D48 /* PPGroupedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPGroupedTableViewController.m; sourceTree = "<group>"; };
+		56558D691901207A00368D48 /* PPSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSettingsViewController.h; sourceTree = "<group>"; };
+		56558D6A1901207A00368D48 /* PPSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSettingsViewController.m; sourceTree = "<group>"; };
+		56558D6D190121C600368D48 /* PPSettingsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSettingsTableViewCell.h; sourceTree = "<group>"; };
+		56558D6E190121C600368D48 /* PPSettingsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSettingsTableViewCell.m; sourceTree = "<group>"; };
+		56558D70190123A400368D48 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		56558D721901241C00368D48 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		56558D741901244C00368D48 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		56558D761901245900368D48 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		56558D781901247300368D48 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		56558D7A1901249E00368D48 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		5672F3D9190051620080F8BF /* NSString+Pastepasswd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Pastepasswd.h"; sourceTree = "<group>"; };
+		5672F3DA190051620080F8BF /* NSString+Pastepasswd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Pastepasswd.m"; sourceTree = "<group>"; };
 		567BA04C18E0221400862C97 /* PPPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPPasswordViewController.h; sourceTree = "<group>"; };
 		567BA04D18E0221400862C97 /* PPPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPPasswordViewController.m; sourceTree = "<group>"; };
-		567BA05118E026AB00862C97 /* NJOPasswordStrengthEvaluator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJOPasswordStrengthEvaluator.h; sourceTree = "<group>"; };
-		567BA05218E026AB00862C97 /* NJOPasswordStrengthEvaluator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJOPasswordStrengthEvaluator.m; sourceTree = "<group>"; };
-		5683FC0118E05EBE007386F7 /* NSString+CountString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CountString.h"; sourceTree = "<group>"; };
-		5683FC0218E05EBE007386F7 /* NSString+CountString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CountString.m"; sourceTree = "<group>"; };
 		56BC309518B28A0F00B0D692 /* PPLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPLabel.h; sourceTree = "<group>"; };
 		56BC309618B28A0F00B0D692 /* PPLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPLabel.m; sourceTree = "<group>"; };
+		56BE5693197AC74700748F59 /* UIFont+Pastepasswd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Pastepasswd.h"; sourceTree = "<group>"; };
+		56BE5694197AC74700748F59 /* UIFont+Pastepasswd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Pastepasswd.m"; sourceTree = "<group>"; };
 		56D9273218E934F9001134A4 /* PPPasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPPasswordView.h; sourceTree = "<group>"; };
 		56D9273318E934F9001134A4 /* PPPasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPPasswordView.m; sourceTree = "<group>"; };
+		8C9A69B2F37746FEA1847623 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +108,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56558D7B1901249E00368D48 /* AdSupport.framework in Frameworks */,
+				56558D791901247300368D48 /* SystemConfiguration.framework in Frameworks */,
+				56558D771901245900368D48 /* CFNetwork.framework in Frameworks */,
+				56558D751901244C00368D48 /* Security.framework in Frameworks */,
+				56558D731901241C00368D48 /* MobileCoreServices.framework in Frameworks */,
+				56558D71190123A400368D48 /* MessageUI.framework in Frameworks */,
 				560B293B18ABF1C60004BFC4 /* CoreGraphics.framework in Frameworks */,
 				560B293D18ABF1C60004BFC4 /* UIKit.framework in Frameworks */,
 				560B293918ABF1C60004BFC4 /* Foundation.framework in Frameworks */,
+				38341D560D1446A49C53980E /* libPods.a in Frameworks */,
+				5609F3BA1971D913001E1375 /* Crashlytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +142,7 @@
 				560B295718ABF1C60004BFC4 /* PastepasswdTests */,
 				560B293718ABF1C60004BFC4 /* Frameworks */,
 				560B293618ABF1C60004BFC4 /* Products */,
+				8C9A69B2F37746FEA1847623 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,10 +158,17 @@
 		560B293718ABF1C60004BFC4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				56558D7A1901249E00368D48 /* AdSupport.framework */,
+				56558D781901247300368D48 /* SystemConfiguration.framework */,
+				56558D761901245900368D48 /* CFNetwork.framework */,
+				56558D741901244C00368D48 /* Security.framework */,
+				56558D721901241C00368D48 /* MobileCoreServices.framework */,
+				56558D70190123A400368D48 /* MessageUI.framework */,
 				560B293818ABF1C60004BFC4 /* Foundation.framework */,
 				560B293A18ABF1C60004BFC4 /* CoreGraphics.framework */,
 				560B293C18ABF1C60004BFC4 /* UIKit.framework */,
 				560B295118ABF1C60004BFC4 /* XCTest.framework */,
+				2D7C9A8B0F894645BB4FDC49 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -175,13 +220,12 @@
 		560B296718ABF1F90004BFC4 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				56558D6519011FBB00368D48 /* Settings */,
 				56BC309418B289F900B0D692 /* Controls */,
 				560B296B18ABF2FA0004BFC4 /* PPMainViewController.h */,
 				560B296C18ABF2FA0004BFC4 /* PPMainViewController.m */,
 				567BA04C18E0221400862C97 /* PPPasswordViewController.h */,
 				567BA04D18E0221400862C97 /* PPPasswordViewController.m */,
-				5683FC0118E05EBE007386F7 /* NSString+CountString.h */,
-				5683FC0218E05EBE007386F7 /* NSString+CountString.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -193,27 +237,43 @@
 				56415FB618E0A9DC00160A2A /* UIProgressView+Pastepasswd.m */,
 				56415FB818E0AA1700160A2A /* UIImage+Pastepasswd.h */,
 				56415FB918E0AA1700160A2A /* UIImage+Pastepasswd.m */,
+				5672F3D9190051620080F8BF /* NSString+Pastepasswd.h */,
+				5672F3DA190051620080F8BF /* NSString+Pastepasswd.m */,
+				560223EC197A75F30090ACB7 /* UIColor+Pastepasswd.h */,
+				560223ED197A75F30090ACB7 /* UIColor+Pastepasswd.m */,
+				56BE5693197AC74700748F59 /* UIFont+Pastepasswd.h */,
+				56BE5694197AC74700748F59 /* UIFont+Pastepasswd.m */,
 			);
 			name = Categories;
+			sourceTree = "<group>";
+		};
+		56558D6519011FBB00368D48 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				56558D6619011FCC00368D48 /* PPGroupedTableViewController.h */,
+				56558D6719011FCC00368D48 /* PPGroupedTableViewController.m */,
+				56558D691901207A00368D48 /* PPSettingsViewController.h */,
+				56558D6A1901207A00368D48 /* PPSettingsViewController.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		56558D6C1901219800368D48 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				56558D6D190121C600368D48 /* PPSettingsTableViewCell.h */,
+				56558D6E190121C600368D48 /* PPSettingsTableViewCell.m */,
+			);
+			name = cells;
 			sourceTree = "<group>";
 		};
 		567BA04F18E0265B00862C97 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				567BA05018E026AB00862C97 /* Navajo */,
+				5609F3B91971D913001E1375 /* Crashlytics.framework */,
 			);
 			name = Vendor;
 			sourceTree = "<group>";
-		};
-		567BA05018E026AB00862C97 /* Navajo */ = {
-			isa = PBXGroup;
-			children = (
-				567BA05118E026AB00862C97 /* NJOPasswordStrengthEvaluator.h */,
-				567BA05218E026AB00862C97 /* NJOPasswordStrengthEvaluator.m */,
-			);
-			name = Navajo;
-			path = Vendor/Navajo;
-			sourceTree = SOURCE_ROOT;
 		};
 		56BC309418B289F900B0D692 /* Controls */ = {
 			isa = PBXGroup;
@@ -227,6 +287,7 @@
 		56D9273118E934E6001134A4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				56558D6C1901219800368D48 /* cells */,
 				56D9273218E934F9001134A4 /* PPPasswordView.h */,
 				56D9273318E934F9001134A4 /* PPPasswordView.m */,
 			);
@@ -240,10 +301,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 560B296118ABF1C60004BFC4 /* Build configuration list for PBXNativeTarget "Pastepasswd" */;
 			buildPhases = (
+				73299A5B2EDE4DE592DC3B39 /* Check Pods Manifest.lock */,
 				560B293118ABF1C60004BFC4 /* Sources */,
 				560B293218ABF1C60004BFC4 /* Frameworks */,
 				560B293318ABF1C60004BFC4 /* Resources */,
 				56DF26A518E3FE4C002E9B07 /* ShellScript */,
+				9C5162BA400444D3B8B97441 /* Copy Pods Resources */,
+				5609F3B81971D8FA001E1375 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -329,6 +393,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5609F3B81971D8FA001E1375 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Crashlytics.framework/run 88300c2a59d5352c19153a01c6671ab3339d663e 6365883efd310f74cbfc6417d341fef3d8ffdc069ab00826bde1b7645eaf54ed";
+		};
 		56DF26A518E3FE4C002E9B07 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -342,6 +419,36 @@
 			shellPath = /bin/sh;
 			shellScript = "#!/bin/bash\nconf=${CONFIGURATION}\narch=${ARCHS:0:4}\n\nif [ $conf == \"Release\" ]\nthen\necho \"Building bundle version number...\"\nbuildPlist=${INFOPLIST_FILE}\n\nbundleVersion=`/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$buildPlist\" | /usr/bin/perl -pe 's/(\\d+\\.)(\\d+)(\\.\\d+)/$1.($2+1).$3/eg'`\necho $bundleVersion;\n/usr/libexec/PListBuddy -c \"Set :CFBundleVersion $bundleVersion\" \"$buildPlist\"\n\necho \"Building bundle short version number...\"\nbundleShortVersion=`/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"$buildPlist\" | /usr/bin/perl -pe 's/(\\d+\\.)(\\d+)/$1.($2+1)/eg'`\necho $bundleShortVersion;\n/usr/libexec/PListBuddy -c \"Set :CFBundleShortVersionString $bundleShortVersion\" \"$buildPlist\"\n\nelse\n\necho \"Building bundle version number...\"\nbuildPlist=${INFOPLIST_FILE}\necho \"${INFOPLIST_FILE}\"\n\nbundleVersion=`/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$buildPlist\" | /usr/bin/perl -pe 's/(\\d+\\.\\d+\\.)(\\d+)/$1.($2+1)/eg'`\necho $bundleVersion;\n/usr/libexec/PListBuddy -c \"Set :CFBundleVersion $bundleVersion\" \"$buildPlist\"\nfi";
 		};
+		73299A5B2EDE4DE592DC3B39 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9C5162BA400444D3B8B97441 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -349,15 +456,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5683FC0318E05EBE007386F7 /* NSString+CountString.m in Sources */,
+				56558D6819011FCC00368D48 /* PPGroupedTableViewController.m in Sources */,
+				56558D6B1901207A00368D48 /* PPSettingsViewController.m in Sources */,
+				56558D6F190121C600368D48 /* PPSettingsTableViewCell.m in Sources */,
 				56BC309718B28A0F00B0D692 /* PPLabel.m in Sources */,
 				567BA04E18E0221400862C97 /* PPPasswordViewController.m in Sources */,
 				56D9273418E934F9001134A4 /* PPPasswordView.m in Sources */,
+				560223EE197A75F30090ACB7 /* UIColor+Pastepasswd.m in Sources */,
+				5672F3DB190051620080F8BF /* NSString+Pastepasswd.m in Sources */,
 				560B296D18ABF2FA0004BFC4 /* PPMainViewController.m in Sources */,
 				560B294918ABF1C60004BFC4 /* PPAppDelegate.m in Sources */,
 				56415FBA18E0AA1700160A2A /* UIImage+Pastepasswd.m in Sources */,
 				560B294518ABF1C60004BFC4 /* main.m in Sources */,
-				567BA05318E026AB00862C97 /* NJOPasswordStrengthEvaluator.m in Sources */,
+				56BE5695197AC74700748F59 /* UIFont+Pastepasswd.m in Sources */,
 				56415FB718E0A9DC00160A2A /* UIProgressView+Pastepasswd.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,10 +583,15 @@
 		};
 		560B296218ABF1C60004BFC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C9A69B2F37746FEA1847623 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pastepasswd/Pastepasswd-Prefix.pch";
 				INFOPLIST_FILE = "Pastepasswd/Pastepasswd-Info.plist";
@@ -486,10 +602,15 @@
 		};
 		560B296318ABF1C60004BFC4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C9A69B2F37746FEA1847623 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pastepasswd/Pastepasswd-Prefix.pch";
 				INFOPLIST_FILE = "Pastepasswd/Pastepasswd-Info.plist";

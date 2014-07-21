@@ -9,11 +9,15 @@
 #import "PPAppDelegate.h"
 #import "PPMainViewController.h"
 #import "PPPasswordViewController.h"
+#import <Crashlytics/Crashlytics.h>
 
 @implementation PPAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    [Crashlytics startWithAPIKey:@"88300c2a59d5352c19153a01c6671ab3339d663e"];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     PPPasswordViewController *passwordViewController = [[PPPasswordViewController alloc] init];
@@ -25,9 +29,11 @@
     [self.window makeKeyAndVisible];
     
     UINavigationBar *navigationBar = [UINavigationBar appearance];
-	//navigationBar.barTintColor = [UIColor colorWithRed:101.0f / 255.0f green:195.0f / 255.0f blue:169.0f / 255.0f alpha:1];
+	//navigationBar.barTintColor = [UIColor colorWithRed:70.0f / 255.0f green:195.0f / 255.0f blue:182.0f / 255.0f alpha:1];
     //hue: 0.45, saturation: 0.48, brightness: 0.76, alpha: 1.00
-    navigationBar.barTintColor = [UIColor colorWithHue:0.45 saturation:0.48 brightness:0.76 alpha:1.00];
+    //success: 1 hue: 0.46, saturation: 0.70, brightness: 0.81, alpha: 1.00
+    //success: 1 hue: 0.48, saturation: 0.64, brightness: 0.76, alpha: 1.00
+    navigationBar.barTintColor = [UIColor colorWithHue:0.48 saturation:0.64 brightness:0.76 alpha:1.00];
 	navigationBar.tintColor = [UIColor colorWithWhite:1.0f alpha:0.5f];
 	navigationBar.titleTextAttributes = @{
                                           NSForegroundColorAttributeName: [UIColor whiteColor],

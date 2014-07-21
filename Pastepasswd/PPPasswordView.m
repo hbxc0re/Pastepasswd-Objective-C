@@ -7,6 +7,7 @@
 //
 
 #import "PPPasswordView.h"
+#import "TTTAttributedLabel.h"
 
 @interface PPPasswordView ()
 
@@ -18,6 +19,7 @@
 @synthesize passwordSecureLabel = _passwordSecureLabel;
 @synthesize normalTextContainer = _normalTextContainer;
 @synthesize secureTextContainer = _secureTextContainer;
+@synthesize attributedLabel = _attributedLabel;
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -44,6 +46,7 @@
         _passwordLabel.textColor = [UIColor colorWithRed:54.0f / 255.0f green:66.0f / 255.0f blue:75.0f / 255.0f alpha:1.0f];
         _passwordLabel.secureTextEntry = NO;
         [_normalTextContainer addSubview:_passwordLabel];
+    
         
         _passwordSecureLabel = [[UITextField alloc] initWithFrame:CGRectMake(0.0f, 0.0f, self.frame.size.width, 65.0f)];
         _passwordSecureLabel.autoresizingMask = UIViewAutoresizingFlexibleWidth;
@@ -53,6 +56,15 @@
         _passwordSecureLabel.textColor = [UIColor colorWithRed:250.0f / 255.0f green:250.0f / 255.0f blue:250.0f / 255.0f alpha:1.0f];
         _passwordSecureLabel.secureTextEntry = YES;
         [_secureTextContainer addSubview:_passwordSecureLabel];
+        
+        _attributedLabel = [[TTTAttributedLabel alloc] initWithFrame:CGRectZero];
+        _attributedLabel.textColor = [UIColor colorWithRed:115.0f / 255.0f green:119.0f / 255.0f blue:121.0f / 255.0f alpha:1.0];
+        _attributedLabel.backgroundColor = [UIColor clearColor];
+        _attributedLabel.numberOfLines = 0;
+        _attributedLabel.verticalAlignment = TTTAttributedLabelVerticalAlignmentTop;
+        _attributedLabel.frame = CGRectMake(0, 0, 200, 200);
+        [self addSubview:_attributedLabel];
+
 
     }
     return self;
