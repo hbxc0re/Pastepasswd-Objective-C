@@ -11,12 +11,12 @@
 @class TTTAttributedLabel;
 
 @interface PPPasswordView : UIView
-@property (nonatomic, strong) UITextField *passwordLabel;
 @property (nonatomic, strong) UITextField *passwordSecureLabel;
 @property (nonatomic, strong) UIView *normalTextContainer;
 @property (nonatomic, strong) UIView *secureTextContainer;
 @property (nonatomic, strong, readonly) TTTAttributedLabel *attributedLabel;
 
++ (CGFloat)height;
 - (void)slideOut;
 - (void)slideIn;
 @end

@@ -11,7 +11,7 @@
 @implementation UIColor (Pastepasswd)
 
 + (UIColor *)pastepasswdMainColor {
-    return  [self colorWithHue:0.48 saturation:0.64 brightness:0.76 alpha:1.00];
+    return  [self colorWithHue:0.52 saturation:0.65 brightness:0.79 alpha:1.00];
 }
 
 + (UIColor *)pastepasswdTextColor {

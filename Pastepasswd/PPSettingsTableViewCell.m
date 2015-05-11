@@ -8,6 +8,7 @@
 
 #import "PPSettingsTableViewCell.h"
 #import "PPLabel.h"
+#import "UIColor+Pastepasswd.h"
 
 @implementation PPSettingsTableViewCell
 
@@ -27,7 +28,7 @@
         _label.autoresizingMask = UIViewAutoresizingFlexibleWidth;
         _label.backgroundColor = [UIColor clearColor];
         [_label setFont: [UIFont fontWithName:@"Avenir-Medium" size:16.0f]];
-        _label.textColor = [UIColor colorWithRed:63.0f / 255.0f green:69.0f / 255.0f blue:81.0f / 255.0f alpha:1.0f];
+        _label.textColor = [UIColor pastepasswdTextColor];
         [self.contentView addSubview:_label];
     }
     return self;

@@ -12,6 +12,7 @@
 #import "UIColor+Pastepasswd.h"
 #import <MessageUI/MessageUI.h>
 #import <MessageUI/MFMailComposeViewController.h>
+#import "PPPastepasswdViewController.h"
 
 @interface PPSettingsViewController () <UIActionSheetDelegate, MFMailComposeViewControllerDelegate>
 @end
@@ -97,8 +98,7 @@
     return 0;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *cellIdentifier = @"None";
     NSUInteger numberOfRows = [tableView numberOfRowsInSection:indexPath.section];
     
@@ -125,7 +125,7 @@
         
         UISwitch *switchMode = [[UISwitch alloc] initWithFrame:CGRectZero];
         [switchMode setOnTintColor:[UIColor pastepasswdMainColor]];
-        if ([modeValue isEqualToString:@"2"]) {
+        if ([modeValue isEqualToString:@"1"]) {
             [switchMode setOn:YES animated:YES];
         } else {
             [switchMode setOn:NO animated:YES];
@@ -133,18 +133,18 @@
         
         [switchMode addTarget:self action:@selector(_switchMode:) forControlEvents:UIControlEventValueChanged];
         cell.accessoryView = switchMode;
-        cell.label.text = @"Mode";
+        cell.label.text = @"Switch Mode";
     }
     else if (indexPath.section == 1) {
         if (indexPath.row == 0) {
             UIImageView *icon = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"custom-disclosure"]];
             cell.accessoryView = icon;
-            cell.label.text = @"About";
+            cell.label.text = @"Send Feedback";
         }
         if (indexPath.row == 1) {
             UIImageView *icon = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"custom-disclosure"]];
             cell.accessoryView = icon;
-            cell.label.text = @"Send Feedback";
+            cell.label.text = @"About";
         }
     }
     return cell;
@@ -153,60 +153,65 @@
 
 #pragma mark - UITableViewDelegate
 
--(CGFloat)tableView:(UITableView*)tableView heightForRowAtIndexPath:(NSIndexPath*)indexPath
-{
+-(CGFloat)tableView:(UITableView*)tableView heightForRowAtIndexPath:(NSIndexPath*)indexPath {
     return 40.0f;
 }
 
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
-{
-    if (section == 0)
-    {
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    if (section == 0) {
         return @"OPTIONS";
-    }
-    else if (section == 1)
-    {
+    } else if (section == 1) {
         return @"MORE";
     }
     return nil;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-{
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     return 40.0f;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (indexPath.section == 0)
-    {
-        if (indexPath.row == 0)
-        {
-           
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section == 0) {
+        if (indexPath.row == 0) {
         }
         return;
-    }
-    else if (indexPath.section == 1)
-    {
-        if (indexPath.row == 0)
-        {
-            
-        }
-        else if (indexPath.row == 1)
-        {
-            UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Send Suggestions", @"Request Help", nil];
-            actionSheet.actionSheetStyle = UIActionSheetStyleDefault;
-            [actionSheet showInView:self.view];
+    } else if (indexPath.section == 1) {
+        if (indexPath.row == 0) {
+            if ([MFMailComposeViewController canSendMail]) {
+                [[UINavigationBar appearance] setTintColor:nil];
+                MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc] init];
+                mailer.mailComposeDelegate = self;
+                [mailer setSubject:@"Feedback"];
+                
+                NSArray *toRecipients = [NSArray arrayWithObjects:@"pastepasswd@spirosgerokostas.com", nil];
+                [mailer setToRecipients:toRecipients];
+                
+                UIFont *font = [UIFont systemFontOfSize:16.0f];
+                
+                [mailer.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor], NSFontAttributeName:font}];
+                [mailer.navigationBar setTintColor:[UIColor whiteColor]];
+                
+                [self presentViewController:mailer animated:YES completion:nil];
+            } else {
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Pastepasswd"
+                                                                message:@"Your device doesn't support this feature"
+                                                               delegate:nil
+                                                      cancelButtonTitle:@"OK"
+                                                      otherButtonTitles: nil];
+                [alert show];
+            }
+        } else if (indexPath.row == 1) {
+            PPPastepasswdViewController *pastepasswdViewController = [[PPPastepasswdViewController alloc] init];
+            [self.navigationController pushViewController:pastepasswdViewController animated:YES];
         }
     }
 }
 
 #pragma mark - Private Implementation
 
-- (void)_switchMode:(id)sender
-{
+- (void)_switchMode:(id)sender {
     BOOL state = [sender isOn];
-    NSString *value = state == YES ? @"2" : @"1";
+    NSString *value = state == YES ? @"1" : @"2";
     
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     [userDefaults setObject:value forKey:@"mode"];
@@ -215,82 +220,7 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:@"changeMode" object:nil];
 }
 
-#pragma mark - UIActionSheetDelegate
-
-- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-    switch (buttonIndex)
-    {
-        case 0:
-            if ([MFMailComposeViewController canSendMail])
-            {
-                [[UINavigationBar appearance] setTintColor:nil];
-                MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc] init];
-                mailer.mailComposeDelegate = self;
-                [mailer setSubject:@"Suggestions"];
-                
-                NSArray *toRecipients = [NSArray arrayWithObjects:@"support@clipr.io", nil];
-                [mailer setToRecipients:toRecipients];
-                
-                UIFont *font = [UIFont systemFontOfSize:16.0f];
-                
-                [mailer.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor], NSFontAttributeName:font}];
-                [mailer.navigationBar setTintColor:[UIColor whiteColor]];
-                
-                [self presentViewController:mailer animated:YES completion:nil];
-                
-                
-                
-            }
-            else
-            {
-                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Failure"
-                                                                message:@"Your device doesn't support the composer sheet"
-                                                               delegate:nil
-                                                      cancelButtonTitle:@"OK"
-                                                      otherButtonTitles: nil];
-                [alert show];
-                
-            }
-            break;
-        case 1:
-            if ([MFMailComposeViewController canSendMail])
-            {
-                MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc] init];
-                
-                mailer.mailComposeDelegate = self;
-                [mailer setSubject:@"Help"];
-                
-                NSArray *toRecipients = [NSArray arrayWithObjects:@"help@clipr.io", nil];
-                [mailer setToRecipients:toRecipients];
-                
-                UIFont *font = [UIFont systemFontOfSize:16.0f];
-                
-                [mailer.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor], NSFontAttributeName:font}];
-                [mailer.navigationBar setTintColor:[UIColor whiteColor]];
-                
-                [self presentViewController:mailer animated:YES completion:nil];
-                
-            }
-            else
-            {
-                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Failure"
-                                                                message:@"Your device doesn't support the composer sheet"
-                                                               delegate:nil
-                                                      cancelButtonTitle:@"OK"
-                                                      otherButtonTitles: nil];
-                [alert show];
-                
-            }
-            
-            break;
-        default:
-            break;
-    }
-}
-
-- (void)willPresentActionSheet:(UIActionSheet *)actionSheet
-{
+- (void)willPresentActionSheet:(UIActionSheet *)actionSheet {
     for (UIView *subview in actionSheet.subviews) {
         if ([subview isKindOfClass:[UIButton class]]) {
             UIButton *button = (UIButton *)subview;
@@ -302,10 +232,8 @@
 
 #pragma mark - MFMailComposeViewControllerDelegate
 
-- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
-{
-    switch (result)
-    {
+- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error {
+    switch (result) {
         case MFMailComposeResultCancelled:
             //NSLog(@"Mail cancelled: you cancelled the operation and no email message was queued.");
             break;
@@ -325,6 +253,5 @@
     
     [self dismissViewControllerAnimated:YES completion:nil];
 }
-
 
 @end

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		38341D560D1446A49C53980E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7C9A8B0F894645BB4FDC49 /* libPods.a */; };
 		560223EE197A75F30090ACB7 /* UIColor+Pastepasswd.m in Sources */ = {isa = PBXBuildFile; fileRef = 560223ED197A75F30090ACB7 /* UIColor+Pastepasswd.m */; };
-		5609F3BA1971D913001E1375 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5609F3B91971D913001E1375 /* Crashlytics.framework */; };
 		560B293918ABF1C60004BFC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 560B293818ABF1C60004BFC4 /* Foundation.framework */; };
 		560B293B18ABF1C60004BFC4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 560B293A18ABF1C60004BFC4 /* CoreGraphics.framework */; };
 		560B293D18ABF1C60004BFC4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 560B293C18ABF1C60004BFC4 /* UIKit.framework */; };
@@ -22,7 +21,7 @@
 		560B295418ABF1C60004BFC4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 560B293C18ABF1C60004BFC4 /* UIKit.framework */; };
 		560B295C18ABF1C60004BFC4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 560B295A18ABF1C60004BFC4 /* InfoPlist.strings */; };
 		560B295E18ABF1C60004BFC4 /* PastepasswdTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 560B295D18ABF1C60004BFC4 /* PastepasswdTests.m */; };
-		560B296D18ABF2FA0004BFC4 /* PPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 560B296C18ABF2FA0004BFC4 /* PPMainViewController.m */; };
+		5638825819854BF100F8BB6A /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5638825719854BF100F8BB6A /* Crashlytics.framework */; };
 		56415FB718E0A9DC00160A2A /* UIProgressView+Pastepasswd.m in Sources */ = {isa = PBXBuildFile; fileRef = 56415FB618E0A9DC00160A2A /* UIProgressView+Pastepasswd.m */; };
 		56415FBA18E0AA1700160A2A /* UIImage+Pastepasswd.m in Sources */ = {isa = PBXBuildFile; fileRef = 56415FB918E0AA1700160A2A /* UIImage+Pastepasswd.m */; };
 		56558D6819011FCC00368D48 /* PPGroupedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56558D6719011FCC00368D48 /* PPGroupedTableViewController.m */; };
@@ -39,6 +38,8 @@
 		56BC309718B28A0F00B0D692 /* PPLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BC309618B28A0F00B0D692 /* PPLabel.m */; };
 		56BE5695197AC74700748F59 /* UIFont+Pastepasswd.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BE5694197AC74700748F59 /* UIFont+Pastepasswd.m */; };
 		56D9273418E934F9001134A4 /* PPPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D9273318E934F9001134A4 /* PPPasswordView.m */; };
+		56F8632219855357004D19B5 /* PPPastepasswdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F8632119855357004D19B5 /* PPPastepasswdViewController.m */; };
+		56F8632619855A25004D19B5 /* libFlurry_5.2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56F8632519855A25004D19B5 /* libFlurry_5.2.0.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +56,6 @@
 		2D7C9A8B0F894645BB4FDC49 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		560223EC197A75F30090ACB7 /* UIColor+Pastepasswd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Pastepasswd.h"; sourceTree = "<group>"; };
 		560223ED197A75F30090ACB7 /* UIColor+Pastepasswd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Pastepasswd.m"; sourceTree = "<group>"; };
-		5609F3B91971D913001E1375 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
 		560B293518ABF1C60004BFC4 /* Pastepasswd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pastepasswd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		560B293818ABF1C60004BFC4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		560B293A18ABF1C60004BFC4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -72,8 +72,7 @@
 		560B295918ABF1C60004BFC4 /* PastepasswdTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PastepasswdTests-Info.plist"; sourceTree = "<group>"; };
 		560B295B18ABF1C60004BFC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		560B295D18ABF1C60004BFC4 /* PastepasswdTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PastepasswdTests.m; sourceTree = "<group>"; };
-		560B296B18ABF2FA0004BFC4 /* PPMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPMainViewController.h; sourceTree = "<group>"; };
-		560B296C18ABF2FA0004BFC4 /* PPMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPMainViewController.m; sourceTree = "<group>"; };
+		5638825719854BF100F8BB6A /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		56415FB518E0A9DC00160A2A /* UIProgressView+Pastepasswd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+Pastepasswd.h"; sourceTree = "<group>"; };
 		56415FB618E0A9DC00160A2A /* UIProgressView+Pastepasswd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+Pastepasswd.m"; sourceTree = "<group>"; };
 		56415FB818E0AA1700160A2A /* UIImage+Pastepasswd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Pastepasswd.h"; sourceTree = "<group>"; };
@@ -94,12 +93,19 @@
 		5672F3DA190051620080F8BF /* NSString+Pastepasswd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Pastepasswd.m"; sourceTree = "<group>"; };
 		567BA04C18E0221400862C97 /* PPPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPPasswordViewController.h; sourceTree = "<group>"; };
 		567BA04D18E0221400862C97 /* PPPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPPasswordViewController.m; sourceTree = "<group>"; };
+		569E424C198513D00071DFD2 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		569E424E198514640071DFD2 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		569E42501985146A0071DFD2 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		56BC309518B28A0F00B0D692 /* PPLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPLabel.h; sourceTree = "<group>"; };
 		56BC309618B28A0F00B0D692 /* PPLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPLabel.m; sourceTree = "<group>"; };
 		56BE5693197AC74700748F59 /* UIFont+Pastepasswd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Pastepasswd.h"; sourceTree = "<group>"; };
 		56BE5694197AC74700748F59 /* UIFont+Pastepasswd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Pastepasswd.m"; sourceTree = "<group>"; };
 		56D9273218E934F9001134A4 /* PPPasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPPasswordView.h; sourceTree = "<group>"; };
 		56D9273318E934F9001134A4 /* PPPasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPPasswordView.m; sourceTree = "<group>"; };
+		56F8632019855357004D19B5 /* PPPastepasswdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPPastepasswdViewController.h; sourceTree = "<group>"; };
+		56F8632119855357004D19B5 /* PPPastepasswdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPPastepasswdViewController.m; sourceTree = "<group>"; };
+		56F8632419855A25004D19B5 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		56F8632519855A25004D19B5 /* libFlurry_5.2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_5.2.0.a; sourceTree = "<group>"; };
 		8C9A69B2F37746FEA1847623 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,12 +119,13 @@
 				56558D771901245900368D48 /* CFNetwork.framework in Frameworks */,
 				56558D751901244C00368D48 /* Security.framework in Frameworks */,
 				56558D731901241C00368D48 /* MobileCoreServices.framework in Frameworks */,
+				56F8632619855A25004D19B5 /* libFlurry_5.2.0.a in Frameworks */,
 				56558D71190123A400368D48 /* MessageUI.framework in Frameworks */,
 				560B293B18ABF1C60004BFC4 /* CoreGraphics.framework in Frameworks */,
 				560B293D18ABF1C60004BFC4 /* UIKit.framework in Frameworks */,
 				560B293918ABF1C60004BFC4 /* Foundation.framework in Frameworks */,
 				38341D560D1446A49C53980E /* libPods.a in Frameworks */,
-				5609F3BA1971D913001E1375 /* Crashlytics.framework in Frameworks */,
+				5638825819854BF100F8BB6A /* Crashlytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +165,9 @@
 		560B293718ABF1C60004BFC4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				569E42501985146A0071DFD2 /* Social.framework */,
+				569E424E198514640071DFD2 /* Accounts.framework */,
+				569E424C198513D00071DFD2 /* Twitter.framework */,
 				56558D7A1901249E00368D48 /* AdSupport.framework */,
 				56558D781901247300368D48 /* SystemConfiguration.framework */,
 				56558D761901245900368D48 /* CFNetwork.framework */,
@@ -222,13 +232,20 @@
 			children = (
 				56558D6519011FBB00368D48 /* Settings */,
 				56BC309418B289F900B0D692 /* Controls */,
-				560B296B18ABF2FA0004BFC4 /* PPMainViewController.h */,
-				560B296C18ABF2FA0004BFC4 /* PPMainViewController.m */,
 				567BA04C18E0221400862C97 /* PPPasswordViewController.h */,
 				567BA04D18E0221400862C97 /* PPPasswordViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
+		};
+		5638825619854BF100F8BB6A /* Crashlytics */ = {
+			isa = PBXGroup;
+			children = (
+				5638825719854BF100F8BB6A /* Crashlytics.framework */,
+			);
+			name = Crashlytics;
+			path = Vendor/Crashlytics;
+			sourceTree = SOURCE_ROOT;
 		};
 		56415FB418E0A9C200160A2A /* Categories */ = {
 			isa = PBXGroup;
@@ -254,6 +271,8 @@
 				56558D6719011FCC00368D48 /* PPGroupedTableViewController.m */,
 				56558D691901207A00368D48 /* PPSettingsViewController.h */,
 				56558D6A1901207A00368D48 /* PPSettingsViewController.m */,
+				56F8632019855357004D19B5 /* PPPastepasswdViewController.h */,
+				56F8632119855357004D19B5 /* PPPastepasswdViewController.m */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -270,7 +289,8 @@
 		567BA04F18E0265B00862C97 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				5609F3B91971D913001E1375 /* Crashlytics.framework */,
+				56F8632319855A25004D19B5 /* Flurry */,
+				5638825619854BF100F8BB6A /* Crashlytics */,
 			);
 			name = Vendor;
 			sourceTree = "<group>";
@@ -294,6 +314,16 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		56F8632319855A25004D19B5 /* Flurry */ = {
+			isa = PBXGroup;
+			children = (
+				56F8632419855A25004D19B5 /* Flurry.h */,
+				56F8632519855A25004D19B5 /* libFlurry_5.2.0.a */,
+			);
+			name = Flurry;
+			path = Vendor/Flurry;
+			sourceTree = SOURCE_ROOT;
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -305,7 +335,6 @@
 				560B293118ABF1C60004BFC4 /* Sources */,
 				560B293218ABF1C60004BFC4 /* Frameworks */,
 				560B293318ABF1C60004BFC4 /* Resources */,
-				56DF26A518E3FE4C002E9B07 /* ShellScript */,
 				9C5162BA400444D3B8B97441 /* Copy Pods Resources */,
 				5609F3B81971D8FA001E1375 /* ShellScript */,
 			);
@@ -404,20 +433,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "./Crashlytics.framework/run 88300c2a59d5352c19153a01c6671ab3339d663e 6365883efd310f74cbfc6417d341fef3d8ffdc069ab00826bde1b7645eaf54ed";
-		};
-		56DF26A518E3FE4C002E9B07 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "#!/bin/bash\nconf=${CONFIGURATION}\narch=${ARCHS:0:4}\n\nif [ $conf == \"Release\" ]\nthen\necho \"Building bundle version number...\"\nbuildPlist=${INFOPLIST_FILE}\n\nbundleVersion=`/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$buildPlist\" | /usr/bin/perl -pe 's/(\\d+\\.)(\\d+)(\\.\\d+)/$1.($2+1).$3/eg'`\necho $bundleVersion;\n/usr/libexec/PListBuddy -c \"Set :CFBundleVersion $bundleVersion\" \"$buildPlist\"\n\necho \"Building bundle short version number...\"\nbundleShortVersion=`/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"$buildPlist\" | /usr/bin/perl -pe 's/(\\d+\\.)(\\d+)/$1.($2+1)/eg'`\necho $bundleShortVersion;\n/usr/libexec/PListBuddy -c \"Set :CFBundleShortVersionString $bundleShortVersion\" \"$buildPlist\"\n\nelse\n\necho \"Building bundle version number...\"\nbuildPlist=${INFOPLIST_FILE}\necho \"${INFOPLIST_FILE}\"\n\nbundleVersion=`/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$buildPlist\" | /usr/bin/perl -pe 's/(\\d+\\.\\d+\\.)(\\d+)/$1.($2+1)/eg'`\necho $bundleVersion;\n/usr/libexec/PListBuddy -c \"Set :CFBundleVersion $bundleVersion\" \"$buildPlist\"\nfi";
+			shellScript = "./Vendor/Crashlytics/Crashlytics.framework/run 88300c2a59d5352c19153a01c6671ab3339d663e 6365883efd310f74cbfc6417d341fef3d8ffdc069ab00826bde1b7645eaf54ed";
 		};
 		73299A5B2EDE4DE592DC3B39 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -464,9 +480,9 @@
 				56D9273418E934F9001134A4 /* PPPasswordView.m in Sources */,
 				560223EE197A75F30090ACB7 /* UIColor+Pastepasswd.m in Sources */,
 				5672F3DB190051620080F8BF /* NSString+Pastepasswd.m in Sources */,
-				560B296D18ABF2FA0004BFC4 /* PPMainViewController.m in Sources */,
 				560B294918ABF1C60004BFC4 /* PPAppDelegate.m in Sources */,
 				56415FBA18E0AA1700160A2A /* UIImage+Pastepasswd.m in Sources */,
+				56F8632219855357004D19B5 /* PPPastepasswdViewController.m in Sources */,
 				560B294518ABF1C60004BFC4 /* main.m in Sources */,
 				56BE5695197AC74700748F59 /* UIFont+Pastepasswd.m in Sources */,
 				56415FB718E0A9DC00160A2A /* UIProgressView+Pastepasswd.m in Sources */,
@@ -591,10 +607,15 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Vendor/Crashlytics",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pastepasswd/Pastepasswd-Prefix.pch";
 				INFOPLIST_FILE = "Pastepasswd/Pastepasswd-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vendor/Flurry",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -610,10 +631,15 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Vendor/Crashlytics",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pastepasswd/Pastepasswd-Prefix.pch";
 				INFOPLIST_FILE = "Pastepasswd/Pastepasswd-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vendor/Flurry",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

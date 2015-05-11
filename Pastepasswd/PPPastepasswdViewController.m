@@ -7,43 +7,68 @@
 //
 
 #import "PPPastepasswdViewController.h"
+#import "PPLabel.h"
+#import "UIFont+Pastepasswd.h"
 
 @interface PPPastepasswdViewController ()
-
+- (void)_closeView:(id)sender;
 @end
 
 @implementation PPPastepasswdViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 320.0f, 24.0f)];
+    title.accessibilityLabel = @"About";
+    title.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+    title.backgroundColor = [UIColor clearColor];
+    title.font = [UIFont fontWithName:@"Avenir-Medium" size:18.0f];
+    title.textColor = [UIColor whiteColor];
+    title.text = @"About";
+    title.layer.shouldRasterize = YES;
+    title.clipsToBounds = NO;
+    [title sizeToFit];
+    
+    self.navigationItem.titleView = title;
+    
+    UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [backButton addTarget:self action:@selector(_closeView:) forControlEvents:UIControlEventTouchDown];
+    [backButton setFrame:CGRectMake(0.0f, 0.0f, 13.0f, 22.0f)];
+    [backButton setBackgroundImage:[UIImage imageNamed:@"back-view"] forState:UIControlStateNormal];
+    [backButton setBackgroundImage:[UIImage imageNamed:@"back-view"] forState:UIControlStateHighlighted];
+    
+    UIBarButtonItem *backButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
+    self.navigationItem.hidesBackButton = YES;
+    self.navigationItem.leftBarButtonItem = backButtonItem;
+
+    NSString *text = @"Version 1.0";
+    
+    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:text];
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    [paragraphStyle setLineSpacing:5];
+    [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, [text length])];
+    
+    PPLabel *headerVersion = [[PPLabel alloc] initWithFrame:CGRectMake(10.0f, 80.0f, self.view.frame.size.width - 20.0f, 65.0f)];
+    headerVersion.numberOfLines = 0;
+    headerVersion.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+    headerVersion.backgroundColor = [UIColor clearColor];
+    headerVersion.font = [UIFont mediumFontWithSize:14.0f];
+    headerVersion.textColor = [UIColor colorWithRed:122.0f / 255.0f green:125.0f / 255.0f blue:133.0f / 255.0f alpha:1.0f];
+    headerVersion.text = @"Version 1.0";
+    
+    headerVersion.attributedText = attributedString;
+    headerVersion.textAlignment = NSTextAlignmentCenter;
+    [self.view addSubview:headerVersion];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - Private Implementation
+
+- (void)_closeView:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
